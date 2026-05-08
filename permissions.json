@@ -4,6 +4,7 @@
   "Description": "Allows starting and stopping specific Azure resources discovered via tags.",
   "Actions": [
     "Microsoft.Resources/subscriptions/resources/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
     "Microsoft.Resources/tags/read",
 
     "Microsoft.ContainerService/managedClusters/start/action",
@@ -36,7 +37,5 @@
     "Microsoft.Compute/virtualMachineScaleSets/deallocate/action"
   ],
   "NotActions": [],
-  "AssignableScopes": [
-    "/subscriptions/YOUR_SUBSCRIPTION_ID"
-  ]
+  "AssignableScopes": ["/subscriptions/<your-subscription-id>"]
 }
